@@ -3,7 +3,7 @@
 ## From 3rd Commit
  - Separated the `args` from `main.rs` to `args.rs` 
  
- Ags Structure :
+ Args Structure :
 ```
 | subcommands 
     | local
