@@ -32,11 +32,11 @@ pub struct LocalCommand{
     pub to : String,
     /// Optional , port --> port on the remote server to be select , if do not specify it by default takes unsigned 2-Byte int 0
     #[clap(short, long, default_value_t = 0)]
-    port: u16,
+    pub port: u16,
 }
 #[derive(Debug,Args)]
 pub struct ServerCommand{
     /// min_port --> Minimum TCP port number to accept To run the remote proxy server.
     #[clap(long, default_value_t = 1024)]
-    min_port: u16,
+    pub min_port: u16,
 }
