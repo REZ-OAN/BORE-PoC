@@ -1,5 +1,5 @@
 [package]
-name = "bore-cli"
+name = "bore-cli-poc"
 version = "0.1.0"
 authors = ["Rezoan Ahmed Abir <ahmedabir.rez@gmail.com>"]
 license = "MIT"

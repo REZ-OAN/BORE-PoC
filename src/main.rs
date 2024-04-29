@@ -1,8 +1,8 @@
 
-use bore_cli::args::{BoreArgs,Command};
-use bore_cli::client::Client;
+use bore_cli_poc::args::{BoreArgs,Command};
+use bore_cli_poc::client::Client;
 use anyhow::Result;
-use bore_cli::server::Server;
+use bore_cli_poc::server::Server;
 use  clap::Parser;
 
 
