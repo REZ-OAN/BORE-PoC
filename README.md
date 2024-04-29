@@ -30,3 +30,13 @@
         -  This organizes our code into modules
     - Modfied the main.rs code for the arg_parse as I have separated the 
         arg_parse definition with clap into another file.
+##  From 5th Commit
+    - Added client.rs
+        - In this file , apply the TCP tunneling by connecting to a server,
+            managing connections and fowarding data between local and remote ports asynchronously
+    - Modified server.rs
+        - Transferred asynchronous function next_mp to shared.rs as recv_json and also send_mp as send_json
+    - Modified main.rs 
+        - added client connection when get the Local Commands
+    - Modified lib.rs 
+        - added the client as module

@@ -1,5 +1,6 @@
 
 use bore_cli::args::{BoreArgs,Command};
+use bore_cli::client::Client;
 use anyhow::Result;
 use bore_cli::server::Server;
 use  clap::Parser;
@@ -15,8 +16,8 @@ async fn main() -> Result<()> {
             let local_port = local_command.local_port;
             let to = local_command.to;
             let port = local_command.port;
-            let _ = (local_port, to, port);
-            todo!()
+            let client = Client::new(local_port, &to, port).await?;
+            client.listen().await?;
         }
         Command::Server(server_command) => {
             let min_port = server_command.min_port;
